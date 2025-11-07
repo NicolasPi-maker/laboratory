@@ -1,6 +1,10 @@
 <template>
   <div class="bg-black h-svh flex flex-col">
     <header class="h-24 w-full bg-inherit top-0 z-50 grid grid-cols-3 gap-1">
+      <div @click="isMute = !isMute" class="col-start-1 flex flex-col gap-1 justify-center items-center text-white">
+        <svg v-if="isMute" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 32 32"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.5 21H8a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h7l6.586-6.586C22.846 3.154 25 4.047 25 5.828V6m0 8.5v11.672c0 1.781-2.154 2.674-3.414 1.414L17 23M7 28L29 6"/></svg>
+        <svg v-else xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 13.857v-3.714a2 2 0 0 1 2-2h2.9a1 1 0 0 0 .55-.165l6-3.956a1 1 0 0 1 1.55.835v14.286a1 1 0 0 1-1.55.835l-6-3.956a1 1 0 0 0-.55-.165H3a2 2 0 0 1-2-2Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M17.5 7.5S19 9 19 11.5s-1.5 4-1.5 4m3-11S23 7 23 11.5s-2.5 7-2.5 7"/></g></svg>
+      </div>
       <div class="col-start-2 flex flex-col gap-1 justify-center items-center">
         <img src="/img/telman.png" class="h-14 w-14 rounded-full object-cover shadow" />
         <p class="text-white font-semibold">Dr Telman</p>
@@ -22,6 +26,8 @@
         </div>
       </li>
     </ul>
+
+    <audio ref="sendSound" src="/sound/send.mp3"></audio>
   </div>
 </template>
 
@@ -46,6 +52,9 @@ const togglePause = () => {
 
 const arrConv = ref([])
 const conversationWrapper = ref(null)
+const sendSound = ref(null)
+
+const isMute = ref(true)
 
 const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -53,6 +62,8 @@ const sleep = (ms) => {
 
 let storedIndex = 0
 let conversationIndex = 0
+
+const defaultTimingMs = 4000
 
 const sendMessage = async () => {
   // Slice array to have only rest of conversation when use pause
@@ -63,9 +74,12 @@ const sendMessage = async () => {
 
     conversationIndex = index + storedIndex + 1
     // time to wait before send current message in loop
-    await sleep(message?.time ?? 2000);
+    await sleep(message?.time ?? defaultTimingMs);
     // Push message to display it
     arrConv.value.push(message);
+    if(sendSound.value && !isMute.value) {
+      sendSound.value.play()
+    }
     // scroll to bottom of conversation
     await scrollTobottomConv()
   }
