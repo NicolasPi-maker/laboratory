@@ -15,8 +15,8 @@
       </div>
     </header>
     <ul class="flex flex-col gap-4 p-6 overflow-auto flex-1" ref="conversationWrapper">
-      <li v-for="(text, index) in arrConv" :key="index">
-        <div class="flex w-full relative message" :class="text.character.side === 'right' ? 'justify-end' : 'justify-start'">
+      <li v-for="(text, index) in arrConv" :key="index" class="flex flex-col message">
+        <div class="flex w-full relative" :class="text.character.side === 'right' ? 'justify-end' : 'justify-start'">
           <p class="text-sm px-2 py-1 text-white rounded-xl max-w-2/3 z-30" 
           :class="[
             text.character.side === 'right' ? 'bg-blue-500' : 'bg-neutral-700']">
@@ -24,9 +24,27 @@
           </p>
           <span :class="[!arrConv[index + 1] || arrConv[index + 1].character.side !== text.character.side ? `tail-${text.character.side} z-10` : '']"></span>
         </div>
+        <!-- <p class="text-xs opacity-50 self-end text-white mr-4 my-1" v-if="index === lastRightMessageIndex">Distribué</p> -->
       </li>
     </ul>
-
+    <div class="h-16 py-3 px-4 flex gap-4 items-center ">
+      <button class="border border-white rounded-full flex justify-center items-center opacity-80 bg-gray-800">
+        <Icon name="mynaui:plus" style="color: white" size="2em"/>
+      </button>
+      <div class="h-full border px-3 py-1 border-white opacity-80 flex-1 rounded-full bg-gray-800 flex items-center">
+        <p class="text-sm text-white opacity-50 flex-1">Message</p>
+        <Icon name="carbon:microphone" style="color:white" class="opacity-50" size="1.2em" />
+      </div>
+    </div>
+    <div class="dropdown p-4" :class="[isOpenChoiceTab ? '' : 'hide']">
+      <ul class="inner text-white flex flex-col gap-4 items-end">
+        <li v-for="choice in conversation[conversationIndex].choices" class="w-auto cursor-pointer" @click="chooseMessage(conversation[conversationIndex], choice)">
+            <p class="text-sm px-2 py-1 text-white rounded-xl bg-blue-500">
+              {{ choice.text }}
+            </p>
+        </li>
+      </ul>
+    </div>
     <audio ref="sendSound" src="/sound/send.mp3"></audio>
   </div>
 </template>
@@ -35,6 +53,8 @@
 onMounted(() => {
   sendMessage()
 })
+
+const lastRightMessageIndex = ref(null)
 
 const pause = ref(false)
 
@@ -50,6 +70,8 @@ const togglePause = () => {
   }
 }
 
+const isOpenChoiceTab = ref(false)
+
 const arrConv = ref([])
 const conversationWrapper = ref(null)
 const sendSound = ref(null)
@@ -64,24 +86,62 @@ let storedIndex = 0
 let conversationIndex = 0
 
 const defaultTimingMs = 4000
+let previousMessageKey = null;
+
+const chooseMessage = async (message, choice) => {
+    previousMessageKey = choice.key
+    let newMessage = {
+      character: message.character,
+      text: choice.text,
+      ...message
+    }
+
+    await pushMessage(newMessage, true)
+
+    togglePause()
+    isOpenChoiceTab.value = false
+}
+
+const pushMessage = async (message, direct = false) => {
+  if(!direct) {
+    await sleep(message?.time ?? defaultTimingMs);
+  }
+  // Push message to display it
+  arrConv.value.push(message);
+  conversationIndex++
+
+  message.character.side === "right" ? lastRightMessageIndex.value = conversationIndex : null;
+
+  if(sendSound.value && !isMute.value) {
+    sendSound.value.play()
+  }
+  // scroll to bottom of conversation
+  await scrollTobottomConv()
+
+}
 
 const sendMessage = async () => {
   // Slice array to have only rest of conversation when use pause
   const truncatedConversation = conversation.slice(conversationIndex)
 
-  for(const [index, message] of truncatedConversation.entries()) {
+  for(let [index, message] of truncatedConversation.entries()) {
     if(pause.value) break;
-
-    conversationIndex = index + storedIndex + 1
     // time to wait before send current message in loop
-    await sleep(message?.time ?? defaultTimingMs);
-    // Push message to display it
-    arrConv.value.push(message);
-    if(sendSound.value && !isMute.value) {
-      sendSound.value.play()
+    if(message?.type === "choice") {
+      await sleep(1000);
+
+      isOpenChoiceTab.value = true
+      togglePause()
+    } else {
+      if(message?.replies) {
+        message = {
+            character: message.character,
+            text: message.replies[previousMessageKey]
+        }
+        previousMessageKey = null
+      }
+      await pushMessage(message)
     }
-    // scroll to bottom of conversation
-    await scrollTobottomConv()
   }
 }
 
@@ -113,15 +173,21 @@ const conversation = [
   {
     character: character1,
     text: "Bonjour Monsieur Turner.",
-    time: 5000
   },
   {
     character: character2,
-    text: "Bonjour docteur Telman.",
+    type: "choice",
+    choices: [
+      { key: "polite", text: "Bonjour docteur Telman." },
+      { key: "direct", text: "J'avais besoin de vous voir." },
+    ],
   },
   {
     character: character1,
-    text: "Comment allez-vous aujourd’hui ? Vous aviez l’air plus détendu la dernière fois.",
+    replies: {
+      polite: "Comment allez-vous aujourd’hui ? Vous aviez l’air plus détendu la dernière fois.",
+      direct: "Je vous écoute, Turner. Quelque chose vous tracasse ?",
+    },
   },
   {
     character: character2,
@@ -133,15 +199,22 @@ const conversation = [
   },
   {
     character: character2,
-    text: "Oui. Je m’endors vite, mais je me réveille en pleine nuit. Toujours vers la même heure.",
+    type: "choice",
+    choices: [
+      { key: "insomnia", text: "Je m'endors vite, mais je me réveille chaque nuit." },
+      { key: "details", text: "Oui… toujours vers la même heure, sans raison apparente." },
+    ],
   },
   {
     character: character1,
-    text: "Vers quelle heure exactement ?",
+    replies: {
+      insomnia: "Vers quelle heure exactement ?",
+      details: "Cette heure fixe vous semble-t-elle significative ?",
+    },
   },
   {
     character: character2,
-    text: "Trois heures vingt. Presque toujours la même minute, c’est étrange.",
+    text: "Trois heures vingt. Presque toujours la même minute.",
   },
   {
     character: character1,
@@ -161,23 +234,22 @@ const conversation = [
   },
   {
     character: character2,
-    text: "Je ne sais pas. C’est comme si quelque chose me surveillait. Comme si j’étais observé.",
+    type: "choice",
+    choices: [
+      { key: "presence", text: "C’est comme si quelque chose me regardait." },
+      { key: "memory", text: "Je ne sais pas… c’est une sensation que je connais, sans comprendre pourquoi." },
+    ],
   },
   {
     character: character1,
-    text: "Par quelqu’un ?",
+    replies: {
+      presence: "Par quelqu’un ?",
+      memory: "Cette impression, vous l’avez déjà ressentie avant ?",
+    },
   },
   {
     character: character2,
-    text: "Pas quelqu’un. C’est plus… une présence. Une impression familière, mais impossible à identifier.",
-  },
-  {
-    character: character1,
-    text: "Cette impression, vous l’avez déjà ressentie avant ces insomnies ?",
-  },
-  {
-    character: character2,
-    text: "Oui. Il y a longtemps. Quand j’étais enfant. Après l’accident de mon frère.",
+    text: "Oui. Il y a longtemps. Après l’accident de mon frère.",
   },
   {
     character: character1,
@@ -193,7 +265,7 @@ const conversation = [
   },
   {
     character: character2,
-    text: "Il est tombé du grenier. J’étais avec lui. On jouait à se cacher… et il est tombé. J’ai crié, mais trop tard.",
+    text: "Il est tombé du grenier. On jouait à se cacher… et il est tombé. J’ai crié, mais trop tard.",
   },
   {
     character: character1,
@@ -201,7 +273,7 @@ const conversation = [
   },
   {
     character: character2,
-    text: "J’aurais pu le retenir. J’aurais dû le retenir. C’est depuis ce jour que je me réveille à cette heure-là.",
+    text: "J’aurais pu le retenir. C’est depuis ce jour que je me réveille à cette heure-là.",
   },
   {
     character: character1,
@@ -211,9 +283,6 @@ const conversation = [
     character: character2,
     text: "Oui. C’est l’heure où il est mort, docteur.",
   },
-];
-
-conversation.push(
   {
     character: character1,
     text: "C’est une heure qui est restée gravée en vous, Turner. Votre esprit essaie peut-être de vous faire revivre ce moment pour le comprendre, ou pour enfin le laisser partir.",
@@ -296,10 +365,6 @@ conversation.push(
   },
   {
     character: character1,
-    text: "…",
-  },
-  {
-    character: character1,
     text: "Turner, je veux que vous sachiez que vous êtes en sécurité ici. Ce que vous ressentez est réel pour vous, mais nous allons le comprendre ensemble, d’accord ?",
   },
   {
@@ -313,9 +378,8 @@ conversation.push(
   {
     character: character2,
     text: "Oui. J’ai hérité de la maison de mes parents. Et j’ai dormi, pour la première fois depuis des années… dans la chambre du grenier.",
-  }
-);
-
+  },
+];
 </script>
 
 <style scoped>
@@ -348,6 +412,20 @@ conversation.push(
 
 .message {
   animation: fade-in .3s ease-in;
+}
+
+.dropdown {
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease;
+  display: grid;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.dropdown:not(.hide) {
+  grid-template-rows: 1fr !important;
 }
 
 @keyframes fade-in {
