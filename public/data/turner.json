@@ -1,0 +1,380 @@
+{
+    "character1": {
+        "role": "Psy",
+        "pic": "/img/telman.png",
+        "name": "Ana",
+        "lastname": "Telman",
+        "side": "left"
+    },
+    "character2": {
+        "role": "Patient",
+        "name": "Turner",
+        "lastname": "John",
+        "side": "right"
+    },
+    "conversation": [
+        {
+            "character": "character1",
+            "text": "Bonjour Monsieur Turner.",
+            "time": 0
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "polite",
+                    "text": "Bonjour docteur Telman."
+                },
+                {
+                    "key": "direct",
+                    "text": "J'avais besoin de vous voir, ça devenait urgent."
+                },
+                {
+                    "key": "cold",
+                    "text": "On peut y aller, je n’ai pas beaucoup de temps."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "polite": "Comment allez-vous aujourd’hui ? Vous aviez l’air plus détendu la dernière fois.",
+                "direct": "Je comprends. Dites-moi ce qui vous a poussé à venir si vite.",
+                "cold": "Très bien. Allons à l’essentiel, si vous le souhaitez."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Oui, un peu… mais ça n’a pas duré. Les nuits sont redevenues compliquées."
+        },
+        {
+            "character": "character1",
+            "text": "Des difficultés à dormir à nouveau ?"
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "insomnia",
+                    "text": "Je m'endors vite, mais je me réveille chaque nuit."
+                },
+                {
+                    "key": "details",
+                    "text": "Oui… toujours vers la même heure, sans raison apparente."
+                },
+                {
+                    "key": "avoid",
+                    "text": "Ce n’est pas important, ce sont juste des insomnies."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "insomnia": "Vers quelle heure exactement ?",
+                "details": "Cette heure fixe vous semble-t-elle avoir une signification pour vous ?",
+                "avoid": "Parfois, ce que l’on minimise contient quelque chose d’important. Regardons quand même l’heure des réveils."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Trois heures vingt. Presque toujours la même minute."
+        },
+        {
+            "character": "character1",
+            "text": "Et que faites-vous alors ?"
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "neutral",
+                    "text": "Je me lève, je bois un verre d’eau. J’essaie de me rendormir."
+                },
+                {
+                    "key": "dark",
+                    "text": "Je reste dans le noir et j’attends, sans trop savoir quoi."
+                },
+                {
+                    "key": "rational",
+                    "text": "Je lis ou je travaille un peu pour me fatiguer."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "neutral": "C’est une façon de reprendre un peu de contrôle. Voyons ce que vous ressentez pendant ces moments.",
+                "dark": "Ce temps d’attente a l’air chargé d’angoisse. Observons ce qui s’y passe en vous.",
+                "rational": "Vous cherchez à occuper l’esprit. Et malgré ça, la tension reste présente, n’est-ce pas ?"
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Il y a ce silence à cette heure-là… il n’est pas reposant. Il est lourd, presque menaçant."
+        },
+        {
+            "character": "character1",
+            "text": "Vous dites 'menaçant'. Qu’est-ce qui vous fait ressentir cela ?"
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "presence",
+                    "text": "C’est comme si quelque chose me regardait."
+                },
+                {
+                    "key": "memory",
+                    "text": "Je connais cette sensation, mais je n’arrive pas à la situer."
+                },
+                {
+                    "key": "deny",
+                    "text": "Probablement la fatigue. Je dramatise, j’imagine."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "presence": "Par quelqu’un, ou plutôt une impression diffuse ?",
+                "memory": "Vous l’avez déjà ressentie avant, dans un autre contexte ?",
+                "deny": "Vous souhaitez garder une explication rationnelle, et c’est compréhensible. Voyons si un souvenir s’y rattache."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Oui. Il y a longtemps. Après l’accident de mon frère."
+        },
+        {
+            "character": "character1",
+            "text": "Je vois… vous ne m’aviez jamais parlé de votre frère, Turner."
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "guilt",
+                    "text": "Parce que je me sens responsable."
+                },
+                {
+                    "key": "avoid_brother",
+                    "text": "Parce que je préfère éviter ce sujet."
+                },
+                {
+                    "key": "cold_fact",
+                    "text": "Parce qu’il est mort. C’est un fait, je n’ai rien à ajouter."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "guilt": "Ce poids de responsabilité, vous le portez depuis longtemps, je me trompe ?",
+                "avoid_brother": "Nous n’irons pas plus vite que vous. Nous pouvons l’aborder à votre rythme.",
+                "cold_fact": "C’est un fait, oui. Et les faits peuvent peser autant que les souvenirs."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Il est tombé du grenier. On jouait à se cacher… et il est tombé. J’ai crié, mais trop tard."
+        },
+        {
+            "character": "character1",
+            "text": "Vous étiez enfant. Vous ne pouviez pas prévoir."
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "self_blame",
+                    "text": "J’aurais pu le retenir. Je l’ai vu glisser."
+                },
+                {
+                    "key": "detach",
+                    "text": "C’est flou. J’ai des trous, comme si ma mémoire avait effacé des morceaux."
+                },
+                {
+                    "key": "repress",
+                    "text": "Je ne veux pas en parler davantage."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "self_blame": "Cette image revient souvent, comme un instant figé. Nous pourrons la traverser ensemble.",
+                "detach": "Le flou est parfois une protection. Nous respecterons ce rythme.",
+                "repress": "Très bien. Nous mettons ce souvenir de côté pour l’instant."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Depuis ce jour, je me réveille à la même heure."
+        },
+        {
+            "character": "character1",
+            "text": "Trois heures vingt ?"
+        },
+        {
+            "character": "character2",
+            "text": "Oui. C’est l’heure où il est mort, docteur."
+        },
+        {
+            "character": "character1",
+            "text": "Cette heure est devenue un repère chargé pour vous. Votre esprit tente peut-être de vous faire signe."
+        },
+        {
+            "character": "character2",
+            "text": "Je l’ai cru longtemps. Mais… ces derniers temps, je ne me réveille plus seul."
+        },
+        {
+            "character": "character1",
+            "text": "Comment ça, 'plus seul' ?"
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "shadow",
+                    "text": "Il y a une silhouette au pied du lit."
+                },
+                {
+                    "key": "sound",
+                    "text": "J’entends des pas derrière la porte."
+                },
+                {
+                    "key": "pressure",
+                    "text": "L’air devient lourd, comme si quelque chose était là avec moi."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "shadow": "Vous la voyez souvent ? Bouge-t-elle, ou reste-t-elle immobile ?",
+                "sound": "Ces pas semblent-ils s’approcher, s’éloigner, ou s’arrêter ?",
+                "pressure": "Cette sensation de présence, est-ce qu’elle s’accompagne d’images ou de souvenirs ?"
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Pas toujours. Mais quand c’est là, j’ai peur de bouger. Peur de confirmer que ce n’est pas qu’une impression."
+        },
+        {
+            "character": "character1",
+            "text": "Décrivez-moi ce que vous percevez, sans forcer les choses."
+        },
+        {
+            "character": "character2",
+            "text": "Petite. Immobile. Il y a un reflet faible derrière… et parfois le plancher qui craque, comme autrefois, dans le grenier."
+        },
+        {
+            "character": "character1",
+            "text": "Vous avez essayé de consigner ces réveils ? Même quelques mots, au moment où ça survient."
+        },
+        {
+            "character": "character2",
+            "text": "J’ai essayé. Mais le matin, les pages sont vides, tournées, parfois arrachées."
+        },
+        {
+            "character": "character1",
+            "text": "Vous vivez seul, actuellement ?"
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "confirm",
+                    "text": "Oui. Enfin… je croyais."
+                },
+                {
+                    "key": "deflect",
+                    "text": "Oui. Pourquoi cette question ?"
+                },
+                {
+                    "key": "avoid",
+                    "text": "Je préfère changer de sujet."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "confirm": "Vous avez remarqué des objets déplacés, des traces, peut-être ?",
+                "deflect": "Parce que ce sentiment de présence peut se manifester dans votre quotidien aussi.",
+                "avoid": "Très bien. Restons sur ce que vous souhaitez partager aujourd’hui."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Oui. Des jouets. Des billes, des petites voitures… exactement les mêmes que celles de mon frère."
+        },
+        {
+            "character": "character1",
+            "text": "Et vous n’en aviez gardé aucun avant cela ?"
+        },
+        {
+            "character": "character2",
+            "text": "Non, docteur. Tout avait été jeté."
+        },
+        {
+            "character": "character1",
+            "text": "Je vais poser une question délicate : serait-il possible que quelqu’un cherche à vous troubler ?"
+        },
+        {
+            "character": "character2",
+            "text": "C’est ce que je me disais au début. Mais cette nuit, j’ai entendu une voix. Une voix d’enfant, tout près."
+        },
+        {
+            "character": "character1",
+            "text": "Que disait cette voix ?"
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "guilt",
+                    "text": "« Pourquoi tu m’as laissé tomber ? »"
+                },
+                {
+                    "key": "denial",
+                    "text": "Je ne suis plus sûr… peut-être que j’ai rêvé."
+                },
+                {
+                    "key": "anger",
+                    "text": "Elle se moquait de moi. Comme si je méritais ça."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "guilt": "Vous êtes en sécurité ici. Ce que vous ressentez est réel pour vous, et nous allons le comprendre ensemble.",
+                "denial": "Le rêve peut porter un message. Nous pouvons l’explorer sans l’imposer comme vérité.",
+                "anger": "Cette colère contre vous-même est vive. Essayons d’entendre ce qu’elle raconte, sans vous juger."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Oui… j’aimerais y croire."
+        },
+        {
+            "character": "character1",
+            "text": "Quand tout cela a-t-il commencé ? Y a-t-il eu un évènement particulier récemment ?"
+        },
+        {
+            "character": "character2",
+            "text": "Oui. J’ai hérité de la maison de mes parents. Et j’ai dormi, pour la première fois depuis des années… dans la chambre du grenier."
+        }
+    ]
+}

@@ -1,0 +1,346 @@
+{
+    "character1": {
+        "role": "Officier",
+        "name": "Liora",
+        "lastname": "Senn",
+        "pic": "/img/senn.png",
+        "side": "left"
+    },
+    "character2": {
+        "role": "Technicien",
+        "name": "Eren",
+        "lastname": "Kael",
+        "side": "right"
+    },
+    "conversation": [
+        {
+            "character": "character1",
+            "text": "Eren ? Vous me recevez ? Les communications viennent juste de se rétablir.",
+            "time": 0
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "relief",
+                    "text": "Oui… enfin. J’ai cru que j’étais seul ici."
+                },
+                {
+                    "key": "sarcastic",
+                    "text": "Oh, génial. Une voix humaine, enfin."
+                },
+                {
+                    "key": "neutral",
+                    "text": "Je vous entends, commandante Senn."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "relief": "Vous n’étiez pas seul. On a perdu la liaison après l’explosion du couloir C.",
+                "sarcastic": "Heureuse de voir que vous avez gardé votre sens de l’humour.",
+                "neutral": "Bien. Restez concentré, Eren. Quelle est votre position ?"
+            }
+        },
+        {
+            "character": "character2",
+            "replies": {
+                "relief": "Je suis dans le module d’entretien. Plus de lumière. L’air devient lourd.",
+                "sarcastic": "Je suis coincé dans la salle d’entretien. Celle qu’on devait réparer avant que tout parte en fumée.",
+                "neutral": "Section maintenance, couloir D. Les systèmes auxiliaires sont hors ligne."
+            }
+        },
+        {
+            "character": "character1",
+            "text": "Essayez de rester calme. Le réacteur secondaire s’est arrêté, mais l’oxygène est stable pour l’instant."
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "trust",
+                    "text": "Vous êtes sûre ? Parce que j’ai du mal à respirer."
+                },
+                {
+                    "key": "hope",
+                    "text": "Bon… au moins, il nous reste un peu de temps."
+                },
+                {
+                    "key": "doubt",
+                    "text": "Stable ? J’ai entendu un bruit sourd il y a deux minutes."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "trust": "Je vous le promets. Le capteur d’atmosphère n’indique rien d’anormal.",
+                "hope": "Oui. Assez pour remettre le cœur de propulsion en marche si on agit vite.",
+                "doubt": "Décrivez-moi ce bruit, Eren. Il pourrait s’agir d’une dépressurisation lente."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "C’était comme un battement… lent. Régulier. Comme si le métal respirait."
+        },
+        {
+            "character": "character1",
+            "text": "Le métal ne respire pas, Eren."
+        },
+        {
+            "character": "character2",
+            "text": "Je sais, commandante. Mais depuis que je suis coincé ici, j’ai l’impression qu’il… m’écoute."
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "rational",
+                    "text": "C’est sûrement mon cœur. Je commence à délirer."
+                },
+                {
+                    "key": "soft",
+                    "text": "Je crois que je perds pied, Liora. J’entends des choses."
+                },
+                {
+                    "key": "sharp",
+                    "text": "Ne me dites pas que vous n’entendez rien, vous aussi ?"
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "rational": "Vous êtes en état de stress intense. Votre esprit comble les silences, c’est normal.",
+                "soft": "Je comprends. L’isolement et le manque d’oxygène peuvent jouer sur la perception. Respirez lentement.",
+                "sharp": "Ici, tout est calme, Eren. Ce que vous entendez n’est pas réel. Gardez la tête froide."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Non, je vous jure. Ce n’est pas dans ma tête."
+        },
+        {
+            "character": "character1",
+            "text": "Eren, écoutez-moi. Vous n’êtes pas seul. Restez concentré sur ma voix."
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "fear",
+                    "text": "Commandante… il y a quelqu’un d’autre sur le canal."
+                },
+                {
+                    "key": "confusion",
+                    "text": "Je n’arrive pas à faire la différence entre vos mots et… les siens."
+                },
+                {
+                    "key": "denial",
+                    "text": "Non, non… la radio déconne, c’est tout."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "fear": "Eren ? Soyez précis. Qu’est-ce que vous entendez ?",
+                "confusion": "Les siens ? Qui ça, Eren ? Il n’y a personne d’autre connecté à cette fréquence.",
+                "denial": "La radio est intacte. Ce que vous percevez n’est pas un parasite, Eren."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Une voix. Très basse. Elle répète mon nom, encore et encore."
+        },
+        {
+            "character": "character1",
+            "text": "Eren, verrouillez le canal secondaire. Maintenant."
+        },
+        {
+            "character": "character2",
+            "text": "Trop tard. Elle est… à l’intérieur de la ligne."
+        },
+        {
+            "character": "character1",
+            "text": "Eren ? Qu’est-ce que vous entendez exactement ?"
+        },
+        {
+            "character": "character2",
+            "text": "Des interférences. Non... ce n’est plus ça. C’est… une respiration."
+        },
+        {
+            "character": "character1",
+            "text": "Restez calme. Les micros internes amplifient les sons du système respiratoire, c’est peut-être le vôtre."
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "trust",
+                    "text": "Oui... peut-être. J’imagine des choses."
+                },
+                {
+                    "key": "doubt",
+                    "text": "Non, c’est plus lent. Ce n’est pas le mien."
+                },
+                {
+                    "key": "fear",
+                    "text": "Elle respire dans ma fréquence, Liora..."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "trust": "Bien. Respirez profondément. Vous devez reprendre le contrôle de votre rythme cardiaque.",
+                "doubt": "Vous êtes sûr ? Essayez de couper votre micro pour vérifier si le son continue.",
+                "fear": "Eren, écoutez-moi. Ce que vous entendez n’est pas réel. Vous devez couper la transmission."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Je coupe…"
+        },
+        {
+            "character": "character2",
+            "text": "…"
+        },
+        {
+            "character": "character2",
+            "text": "Liora ?"
+        },
+        {
+            "character": "character1",
+            "text": "Je vous entends. Qu’est-ce qu’il se passe ?"
+        },
+        {
+            "character": "character2",
+            "text": "La respiration a continué."
+        },
+        {
+            "character": "character1",
+            "text": "Eren, vous devez quitter ce module immédiatement."
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "panic",
+                    "text": "Je… je ne peux pas. La porte est verrouillée de l’extérieur."
+                },
+                {
+                    "key": "resign",
+                    "text": "Il n’y a plus rien à faire, Liora."
+                },
+                {
+                    "key": "rational",
+                    "text": "Je vais tenter le panneau de dérivation. Donnez-moi le code d’urgence."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "panic": "Écoutez-moi, vous n’êtes pas piégé. Le verrou peut être contourné depuis le tableau secondaire à votre gauche.",
+                "resign": "Ne dites pas ça, Eren. Vous êtes vivant. Tant que vous m’entendez, vous êtes vivant.",
+                "rational": "Code d’urgence 6-1-3. Soyez prudent, une surcharge pourrait tout griller."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Je vois le panneau. Il clignote… rouge."
+        },
+        {
+            "character": "character1",
+            "text": "C’est normal. Le système principal essaie de rediriger l’énergie."
+        },
+        {
+            "character": "character2",
+            "text": "Non. Ce n’est pas normal. Le panneau m’a parlé."
+        },
+        {
+            "character": "character1",
+            "text": "Pardon ?"
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "shock",
+                    "text": "Il a dit mon nom. Avec la même voix que vous."
+                },
+                {
+                    "key": "confused",
+                    "text": "J’ai entendu ma propre voix venir du haut-parleur."
+                },
+                {
+                    "key": "deny",
+                    "text": "Non, laissez tomber. J’ai dû halluciner."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "shock": "Eren… restez lucide. Ce n’est pas moi. Vous devez couper l’alimentation immédiatement.",
+                "confused": "C’est probablement un écho enregistré. Le système rejoue des fragments audio corrompus.",
+                "deny": "D’accord. On met ça sur le compte de la fatigue. Concentrez-vous sur le tableau."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Le son continue, Liora. Même quand je ferme les yeux."
+        },
+        {
+            "character": "character1",
+            "text": "Fermez les yeux, oui. Décrivez-moi ce que vous ressentez."
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "calm",
+                    "text": "Il fait chaud. Presque apaisant."
+                },
+                {
+                    "key": "cold",
+                    "text": "Il fait froid. Comme si le vide se glissait dans ma combinaison."
+                },
+                {
+                    "key": "pain",
+                    "text": "Ça brûle. À l’intérieur de ma tête."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "calm": "Très bien. Restez là-dessus. Ce calme, gardez-le le plus longtemps possible.",
+                "cold": "Eren, concentrez-vous sur votre respiration. Inspirez profondément. Vous devez vous réchauffer de l’intérieur.",
+                "pain": "Ouvrez les yeux, maintenant. Vous m’entendez ? Ouvrez-les !"
+            }
+        },
+        {
+            "character": "character2",
+            "text": "… Liora ?"
+        },
+        {
+            "character": "character1",
+            "text": "Je suis là."
+        },
+        {
+            "character": "character2",
+            "text": "Je crois… qu’il y a quelqu’un derrière moi."
+        }
+    ]
+}

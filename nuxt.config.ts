@@ -10,4 +10,9 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  runtimeConfig: {
+    public: {
+      storyBase: '/data',
+    },
+  },
 })
