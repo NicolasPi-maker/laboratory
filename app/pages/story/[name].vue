@@ -182,17 +182,23 @@ const sendMessage = async () => {
 
 	if(story.value?.modificator && isEnd.value) {
 		if(story.value?.modificator.infinite) {
-			resetStory()
+			await sleep(3000)
+			await resetStory()
 			sendMessage()
 		}
 	}
 }
 
-const resetStory = () => {
+const resetStory = async () => {
 	isEnd.value = false
 	storedIndex = 0
 	conversationIndex = 0
-	arrConv.value = []
+
+	const messageCount = arrConv.value.length
+	for(let i = 0; i < messageCount; i++) {
+		arrConv.value.pop()
+		await sleep(100)
+	}
 }
 
 const scrollTobottomConv = async () => {
