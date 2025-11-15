@@ -80,6 +80,12 @@
         },
         {
             "character": "character2",
+            "type": "image",
+            "url": "/data/turner/img/clock.png",
+            "alt": "Chambre de Turner à 3h20"
+        },
+        {
+            "character": "character2",
             "text": "Trois heures vingt. Presque toujours la même minute."
         },
         {
@@ -374,7 +380,8 @@
         },
         {
             "character": "character2",
-            "text": "Oui. J’ai hérité de la maison de mes parents. Et j’ai dormi, pour la première fois depuis des années… dans la chambre du grenier."
+            "text": "Oui. J’ai hérité de la maison de mes parents. Et j’ai dormi, pour la première fois depuis des années… dans la chambre du grenier.",
+            "end": true
         }
     ]
 }

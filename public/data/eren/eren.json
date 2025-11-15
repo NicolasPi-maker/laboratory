@@ -256,6 +256,12 @@
         },
         {
             "character": "character2",
+            "type": "image",
+            "url": "/data/eren/img/control-pannel.png",
+            "alt": "Panneaux de contrôle de redirection énergétique"
+        },
+        {
+            "character": "character2",
             "text": "Je vois le panneau. Il clignote… rouge."
         },
         {
@@ -340,7 +346,8 @@
         },
         {
             "character": "character2",
-            "text": "Je crois… qu’il y a quelqu’un derrière moi."
+            "text": "Je crois… qu’il y a quelqu’un derrière moi.",
+            "end": true
         }
     ]
 }
