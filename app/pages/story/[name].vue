@@ -1,45 +1,35 @@
 <template>
-  <div class="bg-black h-svh flex flex-col" v-if="story">
-    <header class="h-20 w-full bg-inherit top-0 z-50 grid grid-cols-3 gap-1 relative">
-      <div class="col-start-1 flex gap-4 m-4 text-white">
-					<NuxtLink :to="{name: 'index'}" class="h-max p-1 border rounded-full border-white/50 bg-neutral-800 flex items-center justify-center">
-						<Icon name="si:chevron-left-line" style="color: white" size="2em" />
-					</NuxtLink>
-      </div>
-      <div class="col-start-2 flex">
-        <HeaderContactPic :url="story.character1.pic" :name="`${story.character1.name} ${story.character1.lastname}`" />
-      </div>
-      <div class="col-start-3 text-white flex flex-col m-4">
-        <HeaderBinaryButton v-model="pause" :callback="togglePause" class="self-end">
-          <template #true>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5" d="M18.89 12.846c-.353 1.343-2.023 2.292-5.364 4.19c-3.23 1.835-4.845 2.752-6.146 2.384a3.25 3.25 0 0 1-1.424-.841C5 17.614 5 15.743 5 12s0-5.614.956-6.579a3.25 3.25 0 0 1 1.424-.84c1.301-.37 2.916.548 6.146 2.383c3.34 1.898 5.011 2.847 5.365 4.19a3.3 3.3 0 0 1 0 1.692Z"/></svg>
-          </template>
-          <template #false>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5"><rect width="5" height="16.5" x="5" y="3.75" rx="2"/><rect width="5" height="16.5" x="14" y="3.75" rx="2"/></g></svg>
-          </template>
-        </HeaderBinaryButton>
-      </div>
+  <div class="bg-black h-svh flex flex-col" v-if="!loading">
+    <header >
+      <ConversationHeader 
+				:character="story.character1"
+				@toggle-pause="togglePause"
+				v-model="pause"
+				class="h-20 w-full bg-inherit top-0 z-50 grid grid-cols-3 gap-1 relative"
+			/>
     </header>
-
     <section ref="conversationWrapper" class="flex-1 overflow-auto">
-      <conversation-thread v-model="arrConv" />
+      <conversation-thread 
+				v-model="arrConv"
+				@pause="setPause"
+				@unpause="setUnpause"
+			/>
     </section>
-
     <footer class="flex flex-col gap-2">
       <div class="h-16 py-3 px-4 flex gap-4 items-center">
-        <button class="border border-white rounded-full flex justify-center items-center opacity-80 bg-gray-800">
+        <button class="border border-white rounded-full flex justify-center items-center opacity-80 bg-neutral-700">
           <Icon name="mynaui:plus" style="color: white" size="2em"/>
         </button>
-        <div class="h-full border px-3 py-1 border-white opacity-80 flex-1 rounded-full bg-gray-800 flex items-center">
+        <div class="h-full border px-3 py-1 border-white opacity-80 flex-1 rounded-full bg-neutral-700 flex items-center">
           <p class="text-sm text-white opacity-50 flex-1">Message</p>
           <Icon name="carbon:microphone" style="color:white" class="opacity-50" size="1.2em" />
         </div>
       </div>
   
       <div class="dropdown rounded-tr-2xl rounded-tl-2xl" :class="[isOpenChoiceTab ? 'p-4' : 'hide']">
-        <ul class="inner text-white flex flex-col gap-8 items-end">
+        <ul class="inner text-white flex flex-col gap-6 items-end">
           <li v-for="choice in story.conversation[conversationIndex]?.choices" class="cursor-pointer" @click="chooseMessage(story.conversation[conversationIndex], choice)">
-              <p class="text-sm px-2 py-2  text-white rounded-xl bg-blue-500 relative">
+              <p class="text-sm choice relative bg-neutral-900 rounded-2xl">
                 {{ choice.text }}
               </p>
           </li>
@@ -56,20 +46,28 @@ const { loadStory } = useStory();
 const story = ref(null)
 const route = useRoute()
 
+const loading = ref(true);
+
 onMounted(async () => {
-	await setStory()
+	const filename = route.params.name
+	await setStory(filename)
 })
 
-const setStory = async () => {
-	const storyName = route.params.name
+const setStory = async (filename) => {
 	try {
-		const data = await loadStory(storyName);
+		loading.value = true
+
+		const directory = route.params.name
+		const data = await loadStory(`${directory}/${filename}`);
+
 		if(data) {
 			story.value = data
 			sendMessage()
 		}
 	} catch(e) {
 		navigateTo('/')
+	} finally {
+		loading.value = false
 	}
 }
 
@@ -78,13 +76,22 @@ const pause = ref(false)
 const togglePause = () => {
   if(pause.value) {
     // Continue conversation
-    pause.value = false
-    sendMessage()
+    setUnpause()
   } else {
     // Stop conversation
-    pause.value = true
-    storedIndex = conversationIndex
+    setPause()
   }
+}
+
+const setPause = () => {
+	pause.value = true
+}
+
+const setUnpause = () => {
+	if(isOpenChoiceTab.value) return
+
+	pause.value = false
+	sendMessage()
 }
 
 const isOpenChoiceTab = ref(false)
@@ -99,10 +106,9 @@ const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-let storedIndex = 0
 let conversationIndex = 0
-
 const defaultTimingMs = 3000
+
 let previousMessageKey = null;
 
 const toggleChoiceTab = async () => {
@@ -133,22 +139,21 @@ const chooseMessage = async (message, choice) => {
 }
 
 const pushMessage = async (message, direct = false) => {
-  if(!direct) {
-    await sleep(message?.time ?? defaultTimingMs);
-  }
-
 	let newMessage = message
 	newMessage.character = story.value[message.character]
   // Push message to display it
+	conversationIndex++
+
+  if(!direct) {
+    await sleep(message?.time ?? defaultTimingMs);
+  }
   arrConv.value.push(newMessage);
-  conversationIndex++
 
   if(sendSound.value && !isMute.value) {
     sendSound.value.play()
   }
   // scroll to bottom of conversation
   await scrollTobottomConv()
-
 }
 
 const isEnd = ref(false)
@@ -180,18 +185,18 @@ const sendMessage = async () => {
 		}
   }
 
-	if(story.value?.modificator && isEnd.value) {
-		if(story.value?.modificator.infinite) {
-			await sleep(3000)
+	if(story.value?.meta?.next && isEnd.value) {
+		if(story.value?.meta?.next) {
 			await resetStory()
-			sendMessage()
+			story.value = setStory(story.value.meta.next)
 		}
 	}
 }
 
 const resetStory = async () => {
+	await sleep(3000)
+
 	isEnd.value = false
-	storedIndex = 0
 	conversationIndex = 0
 
 	const messageCount = arrConv.value.length
@@ -213,6 +218,22 @@ const scrollTobottomConv = async () => {
 </script>
 
 <style scoped>
+
+.choice {
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 10px 14px;
+  color: #E2E8F0;
+  backdrop-filter: blur(4px);
+  align-self: flex-end;
+  transition: 0.15s ease;
+}
+
+.choice:hover {
+  border-color: rgba(255,255,255,0.35);
+  cursor: pointer;
+  transform: translateY(-1px);
+}
+
 .dropdown {
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.5s ease;

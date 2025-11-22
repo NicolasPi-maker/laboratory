@@ -1,0 +1,201 @@
+{
+    "meta": {
+        "sessionId": 2,
+        "next": "session_03",
+        "title": "SESSION 02 - ÉCHO"
+    },
+    "character1": {
+        "role": "Interlocuteur",
+        "name": "M.",
+        "lastname": "N.",
+        "side": "left",
+        "pic": null
+    },
+    "character2": {
+        "role": "Sujet",
+        "name": "—",
+        "lastname": "—",
+        "side": "right"
+    },
+    "conversation": [
+        {
+            "character": "character1",
+            "text": "Bonsoir. Vous entendez ma voix ?"
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "uncertain",
+                    "text": "Je crois… oui."
+                },
+                {
+                    "key": "cold",
+                    "text": "Encore vous ?"
+                },
+                {
+                    "key": "lost",
+                    "text": "Où suis-je, cette fois ?"
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "uncertain": "Très bien. Vous vous réveillez vite, cette fois.",
+                "cold": "Encore moi. Vous vous en souvenez, donc.",
+                "lost": "Toujours au même endroit, Eren."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Vous m’avez déjà dit ça… non ?"
+        },
+        {
+            "character": "character1",
+            "text": "Je dis souvent la vérité. C’est elle qui change."
+        },
+        {
+            "character": "character2",
+            "text": "Vous jouez à quoi, exactement ?"
+        },
+        {
+            "character": "character1",
+            "text": "Ce n’est pas un jeu. C’est un protocole. Session numéro deux."
+        },
+        {
+            "character": "character2",
+            "text": "Il y a eu une première ?"
+        },
+        {
+            "character": "character1",
+            "text": "Oui, mais elle s’est mal terminée. Vous ne vouliez plus parler de la route."
+        },
+        {
+            "character": "character2",
+            "text": "Quelle route ?"
+        },
+        {
+            "character": "character1",
+            "text": "Celle que vous évitez dans vos rêves."
+        },
+        {
+            "character": "character2",
+            "text": "Je n’en fais pas."
+        },
+        {
+            "character": "character1",
+            "text": "Alors pourquoi vos mains tremblent-elles ?"
+        },
+        {
+            "character": "character2",
+            "text": "Je ne tremble pas."
+        },
+        {
+            "character": "character1",
+            "text": "Très bien. Regardez devant vous."
+        },
+        {
+            "character": "character1",
+            "type": "image",
+            "url": "/data/murder/img/file.png",
+            "alt": "Un dossier d’enquête posé sur une table métallique, éclairé par une lumière vacillante, on devine une photo d’identité floue et des annotations manuscrites illisibles, ambiance froide et inquiétante."
+        },
+        {
+            "character": "character2",
+            "text": "C’est la même table que tout à l’heure."
+        },
+        {
+            "character": "character1",
+            "text": "Non, Eren. Ce n’est pas la même, c’est vous qui l’êtes."
+        },
+        {
+            "character": "character2",
+            "text": "Je ne comprends pas. Pourquoi vous m’appelez encore comme ça ?"
+        },
+        {
+            "character": "character1",
+            "text": "Parce que c’est votre nom. Même si vous essayez de l’oublier."
+        },
+        {
+            "character": "character2",
+            "text": "Je n’oublie rien."
+        },
+        {
+            "character": "character1",
+            "text": "C’est ce que vous avez dit la dernière fois, juste avant de tout recommencer."
+        },
+        {
+            "character": "character2",
+            "text": "La dernière fois ?"
+        },
+        {
+            "character": "character1",
+            "text": "Oui. Nous avons cette conversation en boucle. À chaque réveil, vous croyez être au début."
+        },
+        {
+            "character": "character2",
+            "text": "C’est faux. Je me souviens de vous, de la lumière, du bruit…"
+        },
+        {
+            "character": "character1",
+            "text": "C’est un progrès. Continuez."
+        },
+        {
+            "character": "character2",
+            "text": "Puis… une voix. Une femme. Elle m’appelait par mon nom."
+        },
+        {
+            "character": "character1",
+            "text": "Comment s’appelait-elle ?"
+        },
+        {
+            "character": "character2",
+            "text": "… Je crois que je savais. Mais maintenant, c’est flou."
+        },
+        {
+            "character": "character1",
+            "text": "Flou, comme une mémoire effacée par le choc."
+        },
+        {
+            "character": "character2",
+            "text": "Non. Effacée par vous."
+        },
+        {
+            "character": "character1",
+            "text": "Vous me prêtez beaucoup de pouvoir, Eren."
+        },
+        {
+            "character": "character2",
+            "text": "Vous parlez comme si vous étiez dans ma tête."
+        },
+        {
+            "character": "character1",
+            "text": "Et si c’était vous qui étiez dans la mienne ?"
+        },
+        {
+            "character": "character2",
+            "text": "…"
+        },
+        {
+            "character": "character1",
+            "text": "Session deux terminée. Vous avez fait des progrès."
+        },
+        {
+            "character": "character1",
+            "type": "image",
+            "url": "/data/murder/img/record.png",
+            "alt": "Un magnétophone ancien sur une table d’interrogatoire, la bande tourne encore, la lumière rouge d’enregistrement vacille dans l’obscurité, ambiance réaliste et silencieuse."
+        },
+        {
+            "character": "character2",
+            "text": "Non, attendez. Je veux continuer. Je veux savoir."
+        },
+        {
+            "character": "character1",
+            "text": "Ce sera pour la prochaine fois.",
+            "end": true
+        }
+    ]
+}

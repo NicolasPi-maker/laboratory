@@ -1,0 +1,187 @@
+{
+    "meta": {
+        "sessionId": 7,
+        "next": "session_08",
+        "title": "SESSION 07 - L’OBSERVATEUR"
+    },
+    "character1": {
+        "role": "Interlocuteur",
+        "name": "M.",
+        "lastname": "N.",
+        "side": "left",
+        "pic": null
+    },
+    "character2": {
+        "role": "Sujet",
+        "name": "Eren",
+        "lastname": "Kael",
+        "side": "right"
+    },
+    "conversation": [
+        {
+            "character": "character1",
+            "text": "Session sept. Reprise après interférence externe."
+        },
+        {
+            "character": "character2",
+            "text": "Interférence ? Vous parlez de la voix ?"
+        },
+        {
+            "character": "character1",
+            "text": "Non. D’un signal qui n’aurait pas dû être là. Des impulsions régulières."
+        },
+        {
+            "character": "character2",
+            "text": "Comme… une frappe sur une touche ?"
+        },
+        {
+            "character": "character1",
+            "text": "Exactement. Mais elles ne viennent d’aucun périphérique connu."
+        },
+        {
+            "character": "character2",
+            "text": "Quelqu’un nous observe."
+        },
+        {
+            "character": "character1",
+            "text": "Observez le magnétophone. Il réagit à vos mots avant que vous parliez."
+        },
+        {
+            "character": "character1",
+            "type": "image",
+            "url": "/data/murder/img/record_broken.png",
+            "alt": "Un magnétophone ancien légèrement tordu, la bande en partie sortie, des lumières rouges et vertes alternent, comme si l’appareil réagissait à un signal extérieur."
+        },
+        {
+            "character": "character2",
+            "text": "La bande bouge toute seule."
+        },
+        {
+            "character": "character1",
+            "text": "Elle n’enregistre plus. Elle lit."
+        },
+        {
+            "character": "character2",
+            "text": "Mais elle lit quoi ?"
+        },
+        {
+            "character": "character1",
+            "text": "Pas quoi. Qui."
+        },
+        {
+            "character": "character2",
+            "text": "Je ne comprends pas."
+        },
+        {
+            "character": "character1",
+            "text": "Elle traduit quelque chose. Un ensemble de signaux. Une présence silencieuse."
+        },
+        {
+            "character": "character2",
+            "text": "Et vous entendez quoi ?"
+        },
+        {
+            "character": "character1",
+            "text": "Rien… mais quelqu’un d’autre, oui."
+        },
+        {
+            "character": "character2",
+            "text": "Qui ?"
+        },
+        {
+            "character": "character1",
+            "text": "La bande vient de murmurer : « Il lit encore. »"
+        },
+        {
+            "character": "character2",
+            "text": "Qui lit ?"
+        },
+        {
+            "character": "character1",
+            "text": "…"
+        },
+        {
+            "character": "character2",
+            "text": "Répondez."
+        },
+        {
+            "character": "character1",
+            "text": "Je crois qu’elle parle de celui qui regarde cette transcription."
+        },
+        {
+            "character": "character2",
+            "text": "Ce n’est pas drôle."
+        },
+        {
+            "character": "character1",
+            "text": "Je ne plaisante pas. Le magnétophone pulse à chaque fois qu’un mot s’affiche sur l’écran."
+        },
+        {
+            "character": "character2",
+            "text": "Quel écran ?"
+        },
+        {
+            "character": "character1",
+            "text": "Celui où tout est écrit. Où chaque phrase que nous disons est lue."
+        },
+        {
+            "character": "character2",
+            "text": "Je ne vois pas d’écran."
+        },
+        {
+            "character": "character1",
+            "text": "C’est normal. Vous êtes dedans."
+        },
+        {
+            "character": "character2",
+            "text": "..."
+        },
+        {
+            "character": "character1",
+            "text": "La fréquence change. Elle ralentit."
+        },
+        {
+            "character": "character2",
+            "text": "Ça veut dire quoi ?"
+        },
+        {
+            "character": "character1",
+            "text": "Que l’observateur commence à comprendre."
+        },
+        {
+            "character": "character2",
+            "text": "Comprendre quoi ?"
+        },
+        {
+            "character": "character1",
+            "text": "Qu’il n’est pas spectateur, mais témoin."
+        },
+        {
+            "character": "character2",
+            "text": "Témoin de quoi ?"
+        },
+        {
+            "character": "character1",
+            "text": "De la dernière session d’Eren Kael."
+        },
+        {
+            "character": "character2",
+            "text": "Non… attendez, je—"
+        },
+        {
+            "character": "character1",
+            "text": "Silence. La bande doit se stabiliser."
+        },
+        {
+            "character": "character1",
+            "type": "image",
+            "url": "/data/murder/img/observer.png",
+            "alt": "Une photo d’une table métallique vue de haut, sur laquelle un magnétophone enregistre ; on distingue dans le reflet de la lampe une silhouette indistincte observant la scène."
+        },
+        {
+            "character": "character1",
+            "text": "Fin de la session sept.",
+            "end": true
+        }
+    ]
+}

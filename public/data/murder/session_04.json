@@ -1,0 +1,225 @@
+{
+    "meta": {
+        "sessionId": 4,
+        "next": "session_05",
+        "title": "SESSION 04 - BRUIT DE FOND"
+    },
+    "character1": {
+        "role": "Interlocuteur",
+        "name": "M.",
+        "lastname": "N.",
+        "side": "left",
+        "pic": null
+    },
+    "character2": {
+        "role": "Sujet",
+        "name": "Eren",
+        "lastname": "Kael",
+        "side": "right"
+    },
+    "conversation": [
+        {
+            "character": "character1",
+            "text": "Session quatre. Enregistrement… actif."
+        },
+        {
+            "character": "character2",
+            "text": "… Il y a quelqu’un d’autre, cette fois."
+        },
+        {
+            "character": "character1",
+            "text": "Qui ça ?"
+        },
+        {
+            "character": "character2",
+            "text": "Je ne sais pas. Une respiration. Elle vient d’entre les mots."
+        },
+        {
+            "character": "character1",
+            "text": "C’est le bruit de fond. Ne vous laissez pas distraire."
+        },
+        {
+            "character": "character2",
+            "text": "Vous ne l’entendez pas ?"
+        },
+        {
+            "character": "character1",
+            "text": "Non. Continuez, Eren. Où en étions-nous ?"
+        },
+        {
+            "character": "character2",
+            "text": "À la route. Toujours à la route."
+        },
+        {
+            "character": "character1",
+            "text": "Oui. Vous aviez dit qu’il y avait quelqu’un au milieu."
+        },
+        {
+            "character": "character2",
+            "text": "Oui. Une silhouette. Et maintenant, je l’entends respirer dans la bande."
+        },
+        {
+            "character": "character1",
+            "text": "C’est impossible. Le magnétophone est hors ligne depuis trois minutes."
+        },
+        {
+            "character": "character2",
+            "text": "Alors qui enregistre ?"
+        },
+        {
+            "character": "character1",
+            "text": "Eren, concentrez-vous. Regardez la table."
+        },
+        {
+            "character": "character1",
+            "type": "image",
+            "url": "/data/murder/img/record.png",
+            "alt": "Un magnétophone ancien sur une table d’interrogatoire, la bande tourne encore, la lumière rouge d’enregistrement vacille dans l’obscurité, ambiance réaliste et silencieuse."
+        },
+        {
+            "character": "character2",
+            "text": "La lumière clignote. Rouge. Comme un battement."
+        },
+        {
+            "character": "character1",
+            "text": "C’est le témoin d’activité. C’est normal."
+        },
+        {
+            "character": "character2",
+            "text": "Non. Elle s’arrête quand je respire."
+        },
+        {
+            "character": "character1",
+            "text": "…"
+        },
+        {
+            "character": "character2",
+            "text": "Vous la voyez aussi, maintenant ?"
+        },
+        {
+            "character": "character1",
+            "text": "Je vois une table. Rien d’autre."
+        },
+        {
+            "character": "character2",
+            "text": "Alors pourquoi votre voix vient de derrière moi ?"
+        },
+        {
+            "character": "character1",
+            "text": "Eren, écoutez-moi. Ce n’est pas réel. Fermez les yeux."
+        },
+        {
+            "character": "character2",
+            "text": "Je l’ai déjà fait. Trois fois. Et chaque fois, quand je les rouvre, vous dites : « Fermez les yeux. »"
+        },
+        {
+            "character": "character1",
+            "text": "Ce n’est pas vrai."
+        },
+        {
+            "character": "character2",
+            "text": "Alors dites quelque chose d’autre."
+        },
+        {
+            "character": "character1",
+            "text": "…"
+        },
+        {
+            "character": "character2",
+            "text": "Vous voyez ?"
+        },
+        {
+            "character": "character1",
+            "text": "Je… je perds la liaison. Le signal est instable."
+        },
+        {
+            "character": "character2",
+            "text": "Non, c’est moi. Je suis instable."
+        },
+        {
+            "character": "character1",
+            "text": "Eren, concentrez-vous. Que voyez-vous sur la table ?"
+        },
+        {
+            "character": "character2",
+            "text": "Un dossier. Ou ce qu’il en reste. Les feuilles sont noircies."
+        },
+        {
+            "character": "character1",
+            "type": "image",
+            "url": "/data/murder/img/file.png",
+            "alt": "Un dossier d’enquête posé sur une table métallique, éclairé par une lumière vacillante, on devine une photo d’identité floue et des annotations manuscrites illisibles, ambiance froide et inquiétante."
+        },
+        {
+            "character": "character1",
+            "text": "Lisez la première ligne."
+        },
+        {
+            "character": "character2",
+            "text": "« Sujet E. Kael – Session 04 : dégradation de la cohérence temporelle. »"
+        },
+        {
+            "character": "character1",
+            "text": "…"
+        },
+        {
+            "character": "character2",
+            "text": "Pourquoi il y a votre signature en bas ?"
+        },
+        {
+            "character": "character1",
+            "text": "Parce que je dois valider chaque tentative."
+        },
+        {
+            "character": "character2",
+            "text": "Et combien de tentatives avant que je cesse d’exister ?"
+        },
+        {
+            "character": "character1",
+            "text": "Autant qu’il faudra."
+        },
+        {
+            "character": "character2",
+            "text": "Quelqu’un est dans la pièce."
+        },
+        {
+            "character": "character1",
+            "text": "Non, Eren. Il n’y a que nous."
+        },
+        {
+            "character": "character2",
+            "text": "Alors pourquoi la bande…"
+        },
+        {
+            "character": "character2",
+            "type": "image",
+            "url": "/data/murder/img/record_broken.png",
+            "alt": "Une photo réaliste d’un magnétophone ancien dont la bande s’est emmêlée et déchirée, posé sur une table métallique sous une lumière vacillante, ambiance tendue et anormale."
+        },
+        {
+            "character": "character2",
+            "text": "…"
+        },
+        {
+            "character": "character1",
+            "text": "Eren ?"
+        },
+        {
+            "character": "character2",
+            "text": "Quelqu’un a repris la parole sur la bande."
+        },
+        {
+            "character": "character1",
+            "text": "Qui ?"
+        },
+        {
+            "character": "character2",
+            "text": "Moi."
+        },
+        {
+            "character": "character1",
+            "text": "Fin de la session quatre.",
+            "end": true
+        }
+    ]
+}

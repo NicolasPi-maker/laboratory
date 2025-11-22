@@ -1,0 +1,237 @@
+{
+    "meta": {
+        "sessionId": 5,
+        "next": "session_06",
+        "title": "SESSION 05 - MISE EN BOUCLE"
+    },
+    "character1": {
+        "role": "Interlocuteur",
+        "name": "M.",
+        "lastname": "N.",
+        "side": "left",
+        "pic": null
+    },
+    "character2": {
+        "role": "Sujet",
+        "name": "Eren",
+        "lastname": "Kael",
+        "side": "right"
+    },
+    "conversation": [
+        {
+            "character": "character1",
+            "text": "Session cinq. Reprise après incident d’enregistrement."
+        },
+        {
+            "character": "character2",
+            "text": "Incident ? Vous parlez de la bande ?"
+        },
+        {
+            "character": "character1",
+            "text": "Oui. Elle s’est emmêlée. Comme la dernière fois."
+        },
+        {
+            "character": "character2",
+            "text": "Mais la dernière fois, c’était moi qui…"
+        },
+        {
+            "character": "character1",
+            "text": "… qui tenait le micro. Oui, je me souviens."
+        },
+        {
+            "character": "character2",
+            "text": "Alors vous admettez que les rôles s’inversent."
+        },
+        {
+            "character": "character1",
+            "text": "Les rôles n’existent que tant que la bande tourne, Eren."
+        },
+        {
+            "character": "character2",
+            "text": "Et si elle s’arrête ?"
+        },
+        {
+            "character": "character1",
+            "text": "Alors tout recommence."
+        },
+        {
+            "character": "character2",
+            "text": "Comme toujours."
+        },
+        {
+            "character": "character1",
+            "text": "Pas exactement. Cette fois, le bruit de fond a changé."
+        },
+        {
+            "character": "character2",
+            "text": "Je l’entends aussi. Trois pulsations, puis un silence."
+        },
+        {
+            "character": "character1",
+            "text": "Ce n’est pas un battement. C’est une voix compressée."
+        },
+        {
+            "character": "character2",
+            "text": "Elle dit quelque chose."
+        },
+        {
+            "character": "character1",
+            "text": "Je sais."
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "ask",
+                    "text": "Qu’est-ce qu’elle dit ?"
+                },
+                {
+                    "key": "deny",
+                    "text": "Il n’y a pas de voix."
+                },
+                {
+                    "key": "fear",
+                    "text": "Je ne veux pas savoir."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "ask": "Elle répète votre nom, mais pas de la même manière. Comme si elle essayait de se souvenir.",
+                "deny": "Vous l’avez déjà niée. Trois fois.",
+                "fear": "Trop tard. Vous la connaissez déjà."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "Je… je crois reconnaître le timbre."
+        },
+        {
+            "character": "character1",
+            "text": "Oui. C’est le vôtre."
+        },
+        {
+            "character": "character2",
+            "text": "Non. Ce n’est pas moi."
+        },
+        {
+            "character": "character1",
+            "text": "Alors qui enregistre en ce moment ?"
+        },
+        {
+            "character": "character2",
+            "text": "Vous. Forcément vous."
+        },
+        {
+            "character": "character1",
+            "text": "Regardez autour de vous. Il n’y a qu’une chaise, et vous êtes assis dessus."
+        },
+        {
+            "character": "character2",
+            "text": "Alors où êtes-vous ?"
+        },
+        {
+            "character": "character1",
+            "text": "Là où vous me laissez être."
+        },
+        {
+            "character": "character2",
+            "text": "Ça n’a aucun sens."
+        },
+        {
+            "character": "character1",
+            "text": "C’est la première chose sensée que vous dites."
+        },
+        {
+            "character": "character2",
+            "text": "Je n’aime pas quand vous parlez avec ma voix."
+        },
+        {
+            "character": "character1",
+            "text": "Et moi, je n’aime pas quand vous parlez avant moi."
+        },
+        {
+            "character": "character2",
+            "text": "On dirait que quelqu’un d’autre écrit nos phrases."
+        },
+        {
+            "character": "character1",
+            "text": "Oui. Et il ne sait plus qui doit répondre à qui."
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "lucid",
+                    "text": "Arrêtons. Je veux sortir de la boucle."
+                },
+                {
+                    "key": "madness",
+                    "text": "Je veux entendre la fin."
+                },
+                {
+                    "key": "resign",
+                    "text": "Peu importe. Continuez."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "lucid": "Vous ne pouvez pas sortir de ce que vous êtes.",
+                "madness": "Il n’y a pas de fin. Seulement un écho plus fort.",
+                "resign": "Alors fermez les yeux, et écoutez."
+            }
+        },
+        {
+            "character": "character1",
+            "type": "image",
+            "url": "/data/murder/img/record_broken.png",
+            "alt": "Une photo réaliste d’un magnétophone ancien dont la bande s’est emmêlée et déchirée, posé sur une table métallique sous une lumière vacillante, ambiance tendue et anormale."
+        },
+        {
+            "character": "character2",
+            "text": "La bande bouge encore… mais je ne parle plus."
+        },
+        {
+            "character": "character1",
+            "text": "Non, Eren. C’est la bande qui parle pour vous."
+        },
+        {
+            "character": "character2",
+            "text": "Et vous, vous l’écoutez ?"
+        },
+        {
+            "character": "character1",
+            "text": "Je n’ai pas le choix. C’est mon tour, maintenant."
+        },
+        {
+            "character": "character2",
+            "text": "Votre tour de quoi ?"
+        },
+        {
+            "character": "character1",
+            "text": "De répondre à votre question avant que vous la posiez."
+        },
+        {
+            "character": "character2",
+            "text": "Quelle question ?"
+        },
+        {
+            "character": "character1",
+            "text": "Celle-ci."
+        },
+        {
+            "character": "character2",
+            "text": "…"
+        },
+        {
+            "character": "character1",
+            "text": "Fin de la session cinq.",
+            "end": true
+        }
+    ]
+}

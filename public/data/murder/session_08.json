@@ -1,0 +1,210 @@
+{
+    "meta": {
+        "sessionId": 8,
+        "next": "session_09",
+        "title": "SESSION 08 - SATURATION"
+    },
+    "character1": {
+        "role": "Interlocuteur",
+        "name": "M.",
+        "lastname": "N.",
+        "side": "left",
+        "pic": null
+    },
+    "character2": {
+        "role": "Sujet",
+        "name": "Eren",
+        "lastname": "Kael",
+        "side": "right"
+    },
+    "character3": {
+        "role": "???",
+        "name": "—",
+        "lastname": "—",
+        "side": "none",
+        "pic": null
+    },
+    "conversation": [
+        {
+            "character": "character1",
+            "text": "Session huit. Démarrage… forcé."
+        },
+        {
+            "character": "character2",
+            "text": "Forcé ? C’est la Bande qui a lancé la session ?"
+        },
+        {
+            "character": "character1",
+            "text": "Oui. Avant même que j’entre dans la pièce."
+        },
+        {
+            "character": "character2",
+            "text": "Elle nous attend."
+        },
+        {
+            "character": "character1",
+            "text": "Non. Elle attend quelqu’un d’autre."
+        },
+        {
+            "character": "character2",
+            "text": "L’Observateur."
+        },
+        {
+            "character": "character3",
+            "text": "— il est là —"
+        },
+        {
+            "character": "character2",
+            "text": "Vous avez entendu ?"
+        },
+        {
+            "character": "character1",
+            "text": "Oui. Une voix… mais pas humaine."
+        },
+        {
+            "character": "character2",
+            "text": "C’était ma voix. Détournée."
+        },
+        {
+            "character": "character1",
+            "text": "La Bande mélange désormais plusieurs versions de vous."
+        },
+        {
+            "character": "character2",
+            "text": "Combien de versions ?"
+        },
+        {
+            "character": "character1",
+            "text": "Autant qu’il y a eu de sessions… et de tentatives ratées."
+        },
+        {
+            "character": "character2",
+            "text": "Donc elles existent vraiment."
+        },
+        {
+            "character": "character1",
+            "text": "Pour la Bande, oui."
+        },
+        {
+            "character": "character3",
+            "text": "— la route — la route — la route —"
+        },
+        {
+            "character": "character2",
+            "text": "Pourquoi elle répète ça ?"
+        },
+        {
+            "character": "character1",
+            "text": "La route est le seul souvenir partagé entre toutes vos versions."
+        },
+        {
+            "character": "character2",
+            "type": "choice",
+            "choices": [
+                {
+                    "key": "accept",
+                    "text": "Alors je dois l’affronter."
+                },
+                {
+                    "key": "deny",
+                    "text": "Ce n’est pas mon souvenir."
+                },
+                {
+                    "key": "fear",
+                    "text": "Je refuse d’y retourner."
+                }
+            ]
+        },
+        {
+            "character": "character1",
+            "replies": {
+                "accept": "C’est ce que veulent toutes les autres versions de vous.",
+                "deny": "Vous dites toujours ça lorsque la boucle se resserre.",
+                "fear": "C’est précisément cette peur qui alimente la boucle."
+            }
+        },
+        {
+            "character": "character2",
+            "text": "La lumière change… elle vibre."
+        },
+        {
+            "character": "character1",
+            "text": "Ce n’est pas la lumière. C’est l’image."
+        },
+        {
+            "character": "character2",
+            "text": "L’image ?"
+        },
+        {
+            "character": "character1",
+            "type": "image",
+            "url": "/data/murder/img/observer.png",
+            "alt": "Une photo d’une table métallique vue de haut, sur laquelle un magnétophone enregistre ; dans le reflet de la lampe, une silhouette indistincte observe la scène."
+        },
+        {
+            "character": "character2",
+            "text": "La silhouette… elle s’est rapprochée."
+        },
+        {
+            "character": "character1",
+            "text": "Oui. À chaque session."
+        },
+        {
+            "character": "character2",
+            "text": "Elle nous regarde ?"
+        },
+        {
+            "character": "character3",
+            "text": "— non — pas vous —"
+        },
+        {
+            "character": "character2",
+            "text": "Alors qui ?!"
+        },
+        {
+            "character": "character1",
+            "text": "Chut. Écoutez."
+        },
+        {
+            "character": "character3",
+            "text": "— celui qui tourne la page —"
+        },
+        {
+            "character": "character2",
+            "text": "Je sens… quelque chose derrière moi."
+        },
+        {
+            "character": "character1",
+            "text": "Ne vous retournez pas."
+        },
+        {
+            "character": "character2",
+            "text": "Pourquoi ?"
+        },
+        {
+            "character": "character1",
+            "text": "Parce que ce n’est pas vous qu’elle regarde."
+        },
+        {
+            "character": "character3",
+            "text": "— fin de la session —"
+        },
+        {
+            "character": "character1",
+            "text": "Non. Pas encore. Ce n’est pas à elle de décider."
+        },
+        {
+            "character": "character2",
+            "text": "Alors qui décide ?"
+        },
+        {
+            "character": "character1",
+            "text": "Vous le saurez dans la prochaine session."
+        },
+        {
+            "character": "character1",
+            "text": "Fin de la session huit.",
+            "end": true
+        }
+    ]
+}

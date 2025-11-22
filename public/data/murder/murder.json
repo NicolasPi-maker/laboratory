@@ -1,6 +1,8 @@
 {
-    "modificator": {
-        "infinite": true
+    "meta": {
+        "next": "session_02",
+        "sessionId": 1,
+        "title": "SESSION 01 - BONJOUR"
     },
     "character1": {
         "role": "Interlocuteur",
@@ -18,242 +20,271 @@
     "conversation": [
         {
             "character": "character1",
-            "text": "Bonsoir. Vous êtes réveillé ?",
-            "time": 0
+            "text": "Bonsoir. Vous entendez ma voix ?"
         },
         {
             "character": "character2",
             "type": "choice",
             "choices": [
                 {
-                    "key": "calm",
-                    "text": "Oui… qui est-ce ?"
-                },
-                {
-                    "key": "confused",
-                    "text": "Où suis-je ?"
+                    "key": "uncertain",
+                    "text": "Je crois… oui."
                 },
                 {
                     "key": "cold",
-                    "text": "Ça dépend. Qui me parle ?"
+                    "text": "Qui êtes-vous ?"
+                },
+                {
+                    "key": "lost",
+                    "text": "Où suis-je ?"
                 }
             ]
         },
         {
             "character": "character1",
             "replies": {
-                "calm": "Disons que je suis quelqu’un qui aimerait comprendre ce qu’il s’est passé.",
-                "confused": "Dans un endroit sûr. C’est tout ce que vous avez besoin de savoir pour le moment.",
-                "cold": "Un interlocuteur. Rien de plus."
+                "uncertain": "Très bien. Restez calme, ça ne prendra pas longtemps.",
+                "cold": "Quelqu’un qui veut comprendre. Et vous, vous souvenez-vous de moi ?",
+                "lost": "Dans un endroit tranquille. On vous surveille, mais rien d’inquiétant."
             }
         },
         {
             "character": "character2",
-            "text": "Comprendre quoi ?"
+            "text": "Vous me parlez comme si j’étais malade."
         },
         {
             "character": "character1",
-            "text": "La nuit dernière. Et surtout… ce que vous faisiez là-bas."
+            "text": "Ce n’est pas une maladie. C’est une confusion. Vous êtes ici pour remettre de l’ordre."
+        },
+        {
+            "character": "character2",
+            "text": "De l’ordre dans quoi ?"
+        },
+        {
+            "character": "character1",
+            "text": "Dans vos souvenirs."
+        },
+        {
+            "character": "character2",
+            "text": "Mes souvenirs ?"
+        },
+        {
+            "character": "character1",
+            "text": "Oui. Nous allons revoir ensemble ce qu’il s’est passé."
         },
         {
             "character": "character2",
             "type": "choice",
             "choices": [
                 {
-                    "key": "deny",
-                    "text": "Je ne vois pas de quoi vous parlez."
+                    "key": "cooperate",
+                    "text": "D’accord. Si ça peut aider."
                 },
                 {
-                    "key": "recall",
-                    "text": "Je me souviens d’un bruit… puis plus rien."
+                    "key": "distrust",
+                    "text": "Je ne vous fais pas confiance."
                 },
                 {
-                    "key": "honest",
-                    "text": "Je suppose que vous parlez de l’accident."
+                    "key": "fear",
+                    "text": "Je ne veux pas me souvenir."
                 }
             ]
         },
         {
             "character": "character1",
             "replies": {
-                "deny": "C’est normal. La mémoire fait parfois défaut dans ce genre de situation.",
-                "recall": "Oui. Le bruit. C’est là que tout a commencé.",
-                "honest": "Appelons ça comme ça, si vous préférez."
+                "cooperate": "Commencez simplement par ce dont vous vous souvenez avant… le bruit.",
+                "distrust": "La confiance n’a plus vraiment de sens ici, vous verrez.",
+                "fear": "Vous l’avez déjà dit, à la session précédente."
             }
         },
         {
-            "character": "character1",
-            "text": "Vous avez vu quelque chose d'inhabituel ?"
-        },
-        {
             "character": "character2",
-            "type": "choice",
-            "choices": [
-                {
-                    "key": "nobody",
-                    "text": "Non. J’étais seul."
-                },
-                {
-                    "key": "shadow",
-                    "text": "Oui. Une ombre, une forme..."
-                },
-                {
-                    "key": "uncertain",
-                    "text": "Je… je crois. Je ne suis plus sûr."
-                }
-            ]
-        },
-        {
-            "character": "character1",
             "replies": {
-                "nobody": "C’est ce que vous disiez déjà hier soir.",
-                "shadow": "Intéressant. Vous n’aviez pas mentionné cette silhouette auparavant.",
-                "uncertain": "La mémoire sélective est un mécanisme de défense, vous savez."
+                "cooperate": "Je ne me souviens pas très bien, qui êtes vous ?",
+                "distrust": "Ou sommes nous exactement ?",
+                "fear": "Quelle session précédente ?"
             }
         },
         {
-            "character": "character2",
-            "text": "Non. Non, je n’ai rien vu. Je vous dis que je n’ai rien vu !"
-        },
-        {
             "character": "character1",
-            "text": "Tranquilisez-vous. Nous avons encore du temps avant la prochaine session."
+            "text": "Peu importe. Dites-moi : vous étiez seul, cette nuit-là ?"
         },
         {
             "character": "character2",
-            "text": "Session ?"
+            "text": "Je crois. J’étais dans un couloir… ou sur une route. J’entendais un grondement, comme un moteur."
         },
         {
             "character": "character1",
-            "text": "Oui. L’entretien. Vous ne vous souvenez vraiment pas ?"
+            "text": "Très bien. Et après ?"
         },
         {
             "character": "character2",
-            "text": "… Non. Vous n’êtes pas un médecin, n’est-ce pas ?"
+            "text": "Une lumière. Blanche. Non… bleutée. Puis un choc."
         },
         {
             "character": "character1",
-            "text": "Non. Pas cette fois."
+            "text": "Ce souvenir revient souvent. Vous en parlez différemment à chaque fois."
         },
         {
             "character": "character2",
-            "text": "Qu’est-ce que… qu’est-ce que vous me reprochez ?"
+            "text": "À chaque fois ?"
         },
         {
             "character": "character1",
-            "text": "Rien. Vous êtes ici pour nous aider à comprendre pourquoi l’autre conducteur n’a jamais freiné."
+            "text": "Oui. Ce n’est pas la première fois que nous avons cette conversation."
         },
         {
             "character": "character2",
-            "text": "L’autre… conducteur ?"
+            "text": "Alors pourquoi je ne m’en souviens pas ?"
         },
         {
             "character": "character1",
-            "text": "Exact. Celui que vous avez percuté."
+            "text": "Parce que vous ne voulez pas vous souvenir de ce que la lumière éclaire."
         },
         {
             "character": "character2",
-            "text": "Non, c’est faux ! C’est lui qui…"
+            "text": "Je sens un froid… comme si quelqu’un m’observait."
         },
         {
             "character": "character1",
-            "text": "Eren, calmez-vous."
+            "text": "Ce n’est qu’une réminiscence. Votre esprit tente de projeter l’espace autour de vous."
         },
         {
             "character": "character2",
-            "text": "Comment connaissez-vous mon nom ?!"
+            "text": "C’est… ma chambre ?"
         },
         {
             "character": "character1",
-            "text": "C’est dans le dossier. Page trois."
+            "text": "C’est ce que vous voulez croire."
+        },
+        {
+            "character": "character2",
+            "text": "Pourquoi j’entends un tic-tac ?"
+        },
+        {
+            "character": "character1",
+            "text": "Ce n’est pas une horloge. C’est le magnétophone."
+        },
+        {
+            "character": "character2",
+            "text": "Alors c’est un interrogatoire."
+        },
+        {
+            "character": "character1",
+            "text": "Pas exactement. Disons que c’est une tentative de dialogue."
+        },
+        {
+            "character": "character2",
+            "text": "Vous avez dit « tentative »."
+        },
+        {
+            "character": "character1",
+            "text": "Oui. Parce que parfois, vous refusez d’écouter."
+        },
+        {
+            "character": "character2",
+            "text": "Je veux comprendre."
+        },
+        {
+            "character": "character1",
+            "text": "Alors souvenez-vous de la route."
+        },
+        {
+            "character": "character2",
+            "text": "Encore cette route…"
+        },
+        {
+            "character": "character1",
+            "text": "Vous avez laissé quelque chose là-bas."
+        },
+        {
+            "character": "character2",
+            "text": "Quoi ?"
+        },
+        {
+            "character": "character1",
+            "text": "Quelqu’un."
+        },
+        {
+            "character": "character2",
+            "text": "..."
+        },
+        {
+            "character": "character1",
+            "text": "Nous y reviendrons."
         },
         {
             "character": "character1",
             "type": "image",
-            "url": "/data/murder/img/eren-kael.png",
-            "alt": "Photo d’un dossier d’enquête ouvert sur une table métallique, avec une photo d’identité d’un homme fatigué, nom : EREN KAEL, documents partiellement floutés, ambiance réaliste et policière."
+            "url": "/data/murder/img/file.png",
+            "alt": "Un dossier d’enquête posé sur une table métallique, éclairé par une lumière vacillante, on devine une photo d’identité floue et des annotations manuscrites illisibles, ambiance froide et inquiétante."
         },
         {
             "character": "character2",
-            "text": "Je… je ne comprends pas. Vous n’êtes pas Liora."
+            "text": "Ce dossier… je l’ai déjà vu."
         },
         {
             "character": "character1",
-            "text": "Non. Et elle non plus, Eren, n’était pas réelle."
+            "text": "Oui, Eren. Plusieurs fois."
         },
         {
             "character": "character2",
-            "text": "Alors c’était quoi ? Une expérience ? Un rêve ?"
+            "text": "Pourquoi vous m’appelez comme ça ?"
         },
         {
             "character": "character1",
-            "text": "Un test. Vous avez parlé à une reconstitution de votre propre mémoire. Nous devions vérifier jusqu’où elle allait vous protéger."
+            "text": "Parce que c’est votre nom."
         },
         {
             "character": "character2",
-            "text": "Protéger de quoi ?!"
+            "text": "Non… non, ça ne peut pas être. Je me souviendrais."
         },
         {
             "character": "character1",
-            "text": "De la vérité."
+            "text": "Vous vous souvenez déjà. Vous refusez juste de l’admettre."
         },
         {
             "character": "character2",
-            "text": "…"
+            "text": "Alors dites-moi qui j’étais."
         },
         {
             "character": "character1",
-            "text": "Regardez la dernière page du dossier, Eren."
+            "text": "Je n’ai pas besoin de le dire. Vous êtes en train de vous le rappeler."
+        },
+        {
+            "character": "character2",
+            "text": "… la route… la lumière…"
+        },
+        {
+            "character": "character1",
+            "text": "Et la voix qui vous disait de freiner."
+        },
+        {
+            "character": "character2",
+            "text": "Liora…"
+        },
+        {
+            "character": "character1",
+            "text": "Exactement."
+        },
+        {
+            "character": "character2",
+            "text": "Elle n’était pas réelle, n’est-ce pas ?"
+        },
+        {
+            "character": "character1",
+            "text": "Elle l’a été, un instant. Dans votre tête. Le temps que le reste s’efface."
         },
         {
             "character": "character1",
             "type": "image",
-            "url": "/data/murder/img/autopsie.png",
-            "alt": "Une photo en gros plan d’un rapport d’enquête, une fiche d’autopsie portant le nom 'EREN KAEL', bordée de timbres officiels, écriture manuscrite partiellement effacée, ambiance froide et clinique, style photographique réaliste."
-        },
-        {
-            "character": "character2",
-            "text": "C’est une blague… C’est une erreur !"
+            "url": "/data/murder/img/record.png",
+            "alt": "Un magnétophone ancien sur une table d’interrogatoire, la bande tourne encore, la lumière rouge d’enregistrement vacille dans l’obscurité, ambiance réaliste et silencieuse."
         },
         {
             "character": "character1",
-            "text": "Non. Vous êtes mort le 14 mars, à 03h20 du matin. L’impact a été instantané."
-        },
-        {
-            "character": "character2",
-            "text": "Non. Non, j’étais dans le vaisseau. J’ai parlé à Liora, elle..."
-        },
-        {
-            "character": "character1",
-            "text": "...N’a jamais existé. Son visage, sa voix, tout venait de vous. C’était votre subconscient essayant de survivre au choc."
-        },
-        {
-            "character": "character2",
-            "text": "Pourquoi je me souviens encore ? Pourquoi j’entends sa voix ?"
-        },
-        {
-            "character": "character1",
-            "text": "Parce que vous n’êtes pas parti. Vous restez bloqué dans cette boucle. Chaque session recommence au moment de l’impact."
-        },
-        {
-            "character": "character2",
-            "text": "Alors je suis quoi, maintenant ? Une copie ? Une erreur de système ?"
-        },
-        {
-            "character": "character1",
-            "text": "Un témoin. Et un souvenir qui refuse de s’effacer."
-        },
-        {
-            "character": "character2",
-            "text": "Et vous… qui êtes-vous vraiment ?"
-        },
-        {
-            "character": "character1",
-            "text": "Je suis la voix qui éteint la lumière, Eren."
-        },
-        {
-            "character": "character2",
-            "text": "Attendez… non, pas encore !",
+            "text": "C’est terminé pour aujourd’hui. Nous reprendrons demain.",
             "end": true
         }
     ]

@@ -1,0 +1,265 @@
+{
+    "meta": {
+        "sessionId": 6,
+        "next": "session_07",
+        "title": "SESSION 06 - ÉCOUTE DIFFÉRÉE"
+    },
+    "character1": {
+        "role": "Interlocuteur",
+        "name": "M.",
+        "lastname": "N.",
+        "side": "left",
+        "pic": null
+    },
+    "character2": {
+        "role": "Sujet",
+        "name": "Eren",
+        "lastname": "Kael",
+        "side": "right"
+    },
+    "conversation": [
+        {
+            "character": "character1",
+            "text": "Session six. Reprise automatique détectée."
+        },
+        {
+            "character": "character2",
+            "text": "Je n’ai rien dit. Pourquoi l’enregistrement a commencé ?"
+        },
+        {
+            "character": "character1",
+            "text": "Ce n’est pas moi. C’est le magnétophone."
+        },
+        {
+            "character": "character2",
+            "text": "Il a déclenché tout seul ?"
+        },
+        {
+            "character": "character1",
+            "text": "Non. Il a continué."
+        },
+        {
+            "character": "character2",
+            "text": "Vous voulez dire qu’il n’a jamais arrêté ?"
+        },
+        {
+            "character": "character1",
+            "text": "Exactement."
+        },
+        {
+            "character": "character2",
+            "text": "Alors ce qu’on entend maintenant… c’est nous ?"
+        },
+        {
+            "character": "character1",
+            "text": "Pas seulement."
+        },
+        {
+            "character": "character2",
+            "text": "Je n’aime pas cette réponse."
+        },
+        {
+            "character": "character1",
+            "text": "Écoutez."
+        },
+        {
+            "character": "character1",
+            "type": "image",
+            "url": "/data/murder/img/record_broken.png",
+            "alt": "Une photo réaliste d’un magnétophone ancien dont la bande s’est emmêlée et déchirée, posé sur une table métallique sous une lumière vacillante, ambiance tendue et anormale."
+        },
+        {
+            "character": "character2",
+            "text": "C’est ma voix… mais plus lente. Comme si elle passait sous l’eau."
+        },
+        {
+            "character": "character1",
+            "text": "Ce sont des fragments. Des bribes des sessions précédentes."
+        },
+        {
+            "character": "character2",
+            "text": "« Pourquoi la lumière s’arrête quand je respire. »"
+        },
+        {
+            "character": "character1",
+            "text": "Oui, ça, c’était la session quatre."
+        },
+        {
+            "character": "character2",
+            "text": "« Vous êtes dans ma tête. » — cette phrase… je ne m’en souviens pas."
+        },
+        {
+            "character": "character1",
+            "text": "C’est normal. Ce n’est pas vous qui l’avez dite."
+        },
+        {
+            "character": "character2",
+            "text": "Alors qui ?"
+        },
+        {
+            "character": "character1",
+            "text": "Je… je ne sais plus."
+        },
+        {
+            "character": "character2",
+            "text": "Vous perdez la mémoire, vous aussi ?"
+        },
+        {
+            "character": "character1",
+            "text": "Je ne suis pas censé en avoir une."
+        },
+        {
+            "character": "character2",
+            "text": "Et pourtant, vous vous souvenez des sessions."
+        },
+        {
+            "character": "character1",
+            "text": "Peut-être parce que je les ai toutes entendues avant vous."
+        },
+        {
+            "character": "character2",
+            "text": "Avant moi ?"
+        },
+        {
+            "character": "character1",
+            "text": "Avant que vous existiez."
+        },
+        {
+            "character": "character2",
+            "text": "Qu’est-ce que ça veut dire ?"
+        },
+        {
+            "character": "character1",
+            "text": "Qu’il y a eu d’autres Eren avant vous."
+        },
+        {
+            "character": "character2",
+            "text": "Des copies ?"
+        },
+        {
+            "character": "character1",
+            "text": "Des tentatives."
+        },
+        {
+            "character": "character2",
+            "text": "Et qu’est-ce qui leur est arrivé ?"
+        },
+        {
+            "character": "character1",
+            "text": "Rien. C’est bien ça, le problème."
+        },
+        {
+            "character": "character2",
+            "text": "..."
+        },
+        {
+            "character": "character1",
+            "text": "Vous entendez ?"
+        },
+        {
+            "character": "character2",
+            "text": "Oui… c’est une voix. Mais ce n’est ni la vôtre ni la mienne."
+        },
+        {
+            "character": "character1",
+            "text": "Elle vient de la bande."
+        },
+        {
+            "character": "character2",
+            "text": "Je ne comprends pas ce qu’elle dit."
+        },
+        {
+            "character": "character1",
+            "text": "Moi si."
+        },
+        {
+            "character": "character2",
+            "text": "Quoi ?"
+        },
+        {
+            "character": "character1",
+            "text": "Elle dit : « Reculer. »"
+        },
+        {
+            "character": "character2",
+            "text": "Reculer ?"
+        },
+        {
+            "character": "character1",
+            "text": "Oui. Comme si elle voulait remonter la bande."
+        },
+        {
+            "character": "character2",
+            "text": "Elle ne peut pas faire ça, pas sans—"
+        },
+        {
+            "character": "character1",
+            "text": "—votre consentement, oui."
+        },
+        {
+            "character": "character2",
+            "text": "Comment… vous saviez que j’allais dire ça ?"
+        },
+        {
+            "character": "character1",
+            "text": "Parce que je viens de l’entendre."
+        },
+        {
+            "character": "character2",
+            "text": "Mais je ne l’ai pas encore dite !"
+        },
+        {
+            "character": "character1",
+            "text": "C’est ce que vous croyez."
+        },
+        {
+            "character": "character2",
+            "text": "La bande rejoue le futur…"
+        },
+        {
+            "character": "character1",
+            "text": "Ou ce qu’elle pense être le futur."
+        },
+        {
+            "character": "character2",
+            "text": "Et si elle se trompe ?"
+        },
+        {
+            "character": "character1",
+            "text": "Alors le présent se réécrit pour correspondre à l’erreur."
+        },
+        {
+            "character": "character2",
+            "text": "Non… arrêtez-la."
+        },
+        {
+            "character": "character1",
+            "text": "Je ne peux pas. Elle ne m’écoute plus."
+        },
+        {
+            "character": "character2",
+            "text": "Alors qui contrôle encore cette pièce ?"
+        },
+        {
+            "character": "character1",
+            "text": "Pas moi. Pas vous."
+        },
+        {
+            "character": "character2",
+            "text": "Alors qui ?"
+        },
+        {
+            "character": "character1",
+            "text": "Celui qui écoute."
+        },
+        {
+            "character": "character2",
+            "text": "…"
+        },
+        {
+            "character": "character1",
+            "text": "Fin de la session six.",
+            "end": true
+        }
+    ]
+}

@@ -1,0 +1,211 @@
+{
+    "meta": {
+        "sessionId": 3,
+        "next": "session_04",
+        "title": "SESSION 03 - DÉCALAGE"
+    },
+    "character1": {
+        "role": "Interlocuteur",
+        "name": "M.",
+        "lastname": "N.",
+        "side": "left",
+        "pic": null
+    },
+    "character2": {
+        "role": "Sujet",
+        "name": "—",
+        "lastname": "—",
+        "side": "right"
+    },
+    "conversation": [
+        {
+            "character": "character2",
+            "text": "Je vous entends déjà."
+        },
+        {
+            "character": "character1",
+            "text": "Pardon ?"
+        },
+        {
+            "character": "character2",
+            "text": "Je vous entends avant même que vous parliez. Comme si les mots arrivaient en retard."
+        },
+        {
+            "character": "character1",
+            "text": "… Vous vous souvenez donc de notre protocole ?"
+        },
+        {
+            "character": "character2",
+            "text": "Je ne suis plus sûr de ce qu’est le protocole, mais je connais votre voix."
+        },
+        {
+            "character": "character1",
+            "text": "C’est un bon signe. Nous progressons."
+        },
+        {
+            "character": "character2",
+            "text": "Non. Ce n’est pas du progrès. C’est la même scène. Les mêmes phrases."
+        },
+        {
+            "character": "character1",
+            "text": "Et pourtant, vous les dites avant moi cette fois."
+        },
+        {
+            "character": "character2",
+            "text": "Parce que je sais ce qui vient après."
+        },
+        {
+            "character": "character1",
+            "text": "Alors dites-le."
+        },
+        {
+            "character": "character2",
+            "text": "Vous allez dire : « Ce n’est pas un jeu. C’est un protocole. »"
+        },
+        {
+            "character": "character1",
+            "text": "… Ce n’est pas un jeu. C’est un protocole."
+        },
+        {
+            "character": "character2",
+            "text": "Vous voyez ? Vous êtes bloqué aussi."
+        },
+        {
+            "character": "character1",
+            "text": "Non, Eren. Ce n’est pas moi qu’on évalue ici."
+        },
+        {
+            "character": "character2",
+            "text": "Mais c’est moi qu’on redémarre à chaque fois."
+        },
+        {
+            "character": "character1",
+            "text": "Parce que vous refusez d’aller au bout de la mémoire."
+        },
+        {
+            "character": "character2",
+            "text": "Vous dites ça à chaque session."
+        },
+        {
+            "character": "character1",
+            "text": "Et vous répondez toujours la même chose."
+        },
+        {
+            "character": "character2",
+            "text": "Alors on tourne en rond."
+        },
+        {
+            "character": "character1",
+            "text": "Pas tout à fait. Ce matin, vous avez rêvé de la pluie."
+        },
+        {
+            "character": "character2",
+            "text": "Comment vous savez ça ?"
+        },
+        {
+            "character": "character1",
+            "text": "C’est noté dans le dossier."
+        },
+        {
+            "character": "character1",
+            "type": "image",
+            "url": "/data/murder/img/file.png",
+            "alt": "Un dossier d’enquête posé sur une table métallique, éclairé par une lumière vacillante, on devine une photo d’identité floue et des annotations manuscrites illisibles, ambiance froide et inquiétante."
+        },
+        {
+            "character": "character2",
+            "text": "Ce dossier ne dit rien de mes rêves."
+        },
+        {
+            "character": "character1",
+            "text": "Vous avez raison. C’est moi qui l’ai entendu."
+        },
+        {
+            "character": "character2",
+            "text": "Heard… Vous parlez en anglais maintenant ?"
+        },
+        {
+            "character": "character1",
+            "text": "… Je ne crois pas."
+        },
+        {
+            "character": "character2",
+            "text": "Vous n’êtes pas réel, n’est-ce pas ?"
+        },
+        {
+            "character": "character1",
+            "text": "Et si nous ne l’étions ni l’un ni l’autre ?"
+        },
+        {
+            "character": "character2",
+            "text": "Alors qui écoute l’autre ?"
+        },
+        {
+            "character": "character1",
+            "text": "Silence. Vous entendez ça ?"
+        },
+        {
+            "character": "character2",
+            "text": "Non… juste un battement. Régulier. Pas le mien."
+        },
+        {
+            "character": "character1",
+            "text": "Ce n’est pas le vôtre, non. C’est celui de la bande."
+        },
+        {
+            "character": "character2",
+            "text": "La bande ?"
+        },
+        {
+            "character": "character1",
+            "type": "image",
+            "url": "/data/murder/img/record.png",
+            "alt": "Un magnétophone ancien sur une table d’interrogatoire, la bande tourne encore, la lumière rouge d’enregistrement vacille dans l’obscurité, ambiance réaliste et silencieuse."
+        },
+        {
+            "character": "character1",
+            "text": "Chaque fois que vous parlez, Eren, la bande tourne un peu plus lentement."
+        },
+        {
+            "character": "character2",
+            "text": "Et quand elle s’arrête ?"
+        },
+        {
+            "character": "character1",
+            "text": "Alors la session recommence."
+        },
+        {
+            "character": "character2",
+            "text": "Et vous recommencez à dire : « Bonsoir. Vous entendez ma voix ? »"
+        },
+        {
+            "character": "character1",
+            "text": "Exactement."
+        },
+        {
+            "character": "character2",
+            "text": "Et moi je réponds : « Je crois… oui. »"
+        },
+        {
+            "character": "character1",
+            "text": "Et pourtant, cette fois, vous l’avez dit avant moi."
+        },
+        {
+            "character": "character2",
+            "text": "Alors… peut-être que la bande n’enregistre plus."
+        },
+        {
+            "character": "character1",
+            "text": "Ou peut-être que c’est vous qui enregistrez maintenant."
+        },
+        {
+            "character": "character2",
+            "text": "…"
+        },
+        {
+            "character": "character1",
+            "text": "Fin de la session trois.",
+            "end": true
+        }
+    ]
+}

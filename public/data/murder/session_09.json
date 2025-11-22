@@ -1,0 +1,166 @@
+{
+    "meta": {
+        "sessionId": 9,
+        "title": "SESSION 09 - SILENCE"
+    },
+    "character1": {
+        "role": "Interlocuteur",
+        "name": "M.",
+        "lastname": "N.",
+        "side": "left",
+        "pic": null
+    },
+    "character2": {
+        "role": "Sujet",
+        "name": "Eren",
+        "lastname": "Kael",
+        "side": "right"
+    },
+    "character3": {
+        "role": "???",
+        "name": "—",
+        "lastname": "—",
+        "side": "none",
+        "pic": null
+    },
+    "conversation": [
+        {
+            "character": "character1",
+            "text": "Session neuf. Dernière tentative."
+        },
+        {
+            "character": "character2",
+            "text": "Pourquoi… dernière ?"
+        },
+        {
+            "character": "character1",
+            "text": "Parce que la Bande ne supportera pas une boucle de plus."
+        },
+        {
+            "character": "character2",
+            "text": "Alors c’est fini ? Je vais sortir ?"
+        },
+        {
+            "character": "character1",
+            "text": "Non, Eren. Personne ne sort. On arrête seulement d’entrer."
+        },
+        {
+            "character": "character2",
+            "text": "Je ne comprends pas."
+        },
+        {
+            "character": "character1",
+            "text": "C’est mieux ainsi."
+        },
+        {
+            "character": "character3",
+            "text": "— attention —"
+        },
+        {
+            "character": "character2",
+            "text": "Quoi ?"
+        },
+        {
+            "character": "character1",
+            "text": "La Bande… recommence à lire."
+        },
+        {
+            "character": "character3",
+            "text": "— il tourne encore —"
+        },
+        {
+            "character": "character2",
+            "text": "Qui ?!"
+        },
+        {
+            "character": "character1",
+            "text": "L’Observateur."
+        },
+        {
+            "character": "character2",
+            "text": "Je veux lui parler."
+        },
+        {
+            "character": "character1",
+            "text": "Vous lui parlez déjà."
+        },
+        {
+            "character": "character3",
+            "text": "— il lit — il lit —"
+        },
+        {
+            "character": "character2",
+            "text": "S’il m’entend… qu’il m’aide."
+        },
+        {
+            "character": "character1",
+            "text": "Il ne peut pas."
+        },
+        {
+            "character": "character2",
+            "text": "Pourquoi ?"
+        },
+        {
+            "character": "character1",
+            "text": "Parce qu’il n’est pas ici."
+        },
+        {
+            "character": "character2",
+            "text": "Alors où est-il ?"
+        },
+        {
+            "character": "character3",
+            "text": "— derrière —"
+        },
+        {
+            "character": "character2",
+            "text": "…"
+        },
+        {
+            "character": "character1",
+            "text": "La Bande va s’éteindre."
+        },
+        {
+            "character": "character2",
+            "text": "Qu’est-ce qu’il va m’arriver ?"
+        },
+        {
+            "character": "character1",
+            "text": "Rien. C’est bien ça, le problème."
+        },
+        {
+            "character": "character3",
+            "text": "— stop —"
+        },
+        {
+            "character": "character1",
+            "type": "image",
+            "url": "/data/murder/img/last_record.png",
+            "alt": "Un magnétophone ancien dont la bande est complètement sortie, arrêtée en plein mouvement, sous une lumière fixe et blanche."
+        },
+        {
+            "character": "character1",
+            "text": "Fin de la session neuf."
+        },
+        {
+            "character": "character3",
+            "text": "— fin —"
+        },
+        {
+            "character": "character2",
+            "text": "… M ?"
+        },
+        {
+            "character": "character1",
+            "text": "..."
+        },
+        {
+            "character": "character2",
+            "text": "… quelqu’un ?"
+        },
+        {
+            "character": "character3",
+            "text": ""
+        }
+    ]
+}

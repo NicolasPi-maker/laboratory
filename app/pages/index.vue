@@ -41,19 +41,22 @@ const storyList = [
         fullname: "MN",
         pic: null,
         message: "Bonsoir. Vous êtes réveillé ?",
-        name: "murder"
+        name: "murder",
+        path: "murder/session_01"
     },
     {
         fullname: "Liora Senn",
         pic: "/img/senn.png",
         message: "Eren ? Vous me recevez ? Les communications viennent juste de se rétablir.",
-        name: "eren"
+        name: "eren",
+        path: "eren/eren"
     },
     {
         fullname: "Ana Telman",
         pic: "/img/telman.png",
         message: "Bonjour Monsieur Turner.",
-        name: "turner"
+        name: "turner",
+        path: "turner/turner"
     }
 ];
 
